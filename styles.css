@@ -1,0 +1,37 @@
+.calculator {
+    width: 360px;
+    height: 480px;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen {
+    width: 340px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+#calcButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin: 10px;
+}
+
+.eraseButtons {
+    grid-column: span 2;
+    padding: 10px;
+}
+
+.button {
+    height: 75px;
+}
