@@ -18,6 +18,9 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px 10px;
+    display: flex;
+    justify-content: right;
+    align-items:flex-end;
 }
 
 #calcButtons {
@@ -34,4 +37,11 @@ body {
 
 .button {
     height: 75px;
+}
+
+#currentScreen {
+    text-align: right;
+    height: 50%;
+    width: 100%;
+    padding: 5px;
 }
