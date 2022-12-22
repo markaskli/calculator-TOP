@@ -13,24 +13,24 @@
             <div id="currentScreen"></div>
         </div>
         <div id="calcButtons">
-            <button class="eraseButtons" onclick="clear()">CLEAR</button> 
+            <button class="eraseButtons" onclick="clearScreen()">CLEAR</button> 
             <button class="eraseButtons">DELETE</button>   
             <button class="button" onclick="display(7)">7</button>
             <button class="button" onclick="display(8)">8</button>
             <button class="button" onclick="display(9)">9</button>
-            <button class="button">÷</button>
+            <button class="button" onclick="chooseOperator('÷')">÷</button>
             <button class="button" onclick="display(4)">4</button>
             <button class="button" onclick="display(5)">5</button>
             <button class="button" onclick="display(6)">6</button>
-            <button class="button">x</button>
+            <button class="button" onclick="chooseOperator('x')">x</button>
             <button class="button" onclick="display(1)">1</button>
             <button class="button" onclick="display(2)">2</button>
             <button class="button" onclick="display(3)">3</button>
-            <button class="button">-</button>
+            <button class="button" onclick="chooseOperator('-')">-</button>
             <button class="button">.</button>
             <button class="button" onclick="display(0)">0</button>
-            <button class="button">=</button>
-            <button class="button">+</button>           
+            <button class="button" onclick="operate()">=</button>
+            <button class="button" onclick="chooseOperator('+')">+</button>           
         </div>
     </div>
 
