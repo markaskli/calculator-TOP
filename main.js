@@ -1,20 +1,23 @@
 let screen = document.getElementById('currentScreen');
+let num1 = null;
+let operator; 
 
-function operate(operator, num1, num2) {
+function operate() {
+    num2 = parseInt(screen.textContent);
     if(operator == '+') {
-        return add(num1, num2);
+        screen.textContent = add(num1, num2);
     }
     else if(operator == '-') {
-        return subtract(num1, num2);
+        screen.textContent = subtract(num1, num2);
     }
-    else if(operator == '+') {
-        return add(num1, num2);
+    else if(operator == '÷') {
+        screen.textContent = divide(num1, num2);
     }
-    else if(operator == '*') {
-        return multiply(num1, num2);
+    else if(operator == 'x') {
+        screen.textContent = multiply(num1, num2);
     }
     else {
-        return;
+        screen.textContent = "ERROR"
     }
 
 }
@@ -32,13 +35,23 @@ function multiply(var1, var2) {
 }
 
 function divide(var1, var2) {
+    if(var2 == 0) {
+        return "lol"
+    }
     return var1/var2;
+}
+
+function chooseOperator(buttonVal) {
+    num1 = parseInt(screen.textContent);
+    operator = buttonVal;
+    clearScreen();
 }
 
 function display(number) {
     screen.textContent += number;
 }
 
-function clear() {
+function clearScreen() {
     screen.textContent = "";
 }
+
