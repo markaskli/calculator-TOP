@@ -18,9 +18,6 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px 10px;
-    display: flex;
-    justify-content: right;
-    align-items:flex-end;
 }
 
 #calcButtons {
@@ -28,6 +25,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
     margin: 10px;
+    height: 70%;
 }
 
 .eraseButtons {
@@ -39,9 +37,30 @@ body {
     height: 75px;
 }
 
+#screen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
 #currentScreen {
     text-align: right;
     height: 50%;
-    width: 100%;
-    padding: 5px;
+    width: 95%;
+    font-size: 1.5rem;
+    padding: 10px;
 }
+
+#historyScreen {
+    text-align: right;
+    height: 50%;
+    width: 95%;
+    font-size: 1.25rem;
+    padding: 10px;
+
+
+}
+
