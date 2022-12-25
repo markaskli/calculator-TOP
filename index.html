@@ -10,27 +10,28 @@
 <body>
     <div class="calculator">
         <div id="screen">
-            <div id="currentScreen"></div>
+            <div data-history id="historyScreen"></div>
+            <div data-current id="currentScreen"></div>
         </div>
         <div id="calcButtons">
-            <button class="eraseButtons" onclick="clearScreen()">CLEAR</button> 
-            <button class="eraseButtons">DELETE</button>   
-            <button class="button" onclick="display(7)">7</button>
-            <button class="button" onclick="display(8)">8</button>
-            <button class="button" onclick="display(9)">9</button>
-            <button class="button" onclick="chooseOperator('÷')">÷</button>
-            <button class="button" onclick="display(4)">4</button>
-            <button class="button" onclick="display(5)">5</button>
-            <button class="button" onclick="display(6)">6</button>
-            <button class="button" onclick="chooseOperator('x')">x</button>
-            <button class="button" onclick="display(1)">1</button>
-            <button class="button" onclick="display(2)">2</button>
-            <button class="button" onclick="display(3)">3</button>
-            <button class="button" onclick="chooseOperator('-')">-</button>
-            <button class="button">.</button>
-            <button class="button" onclick="display(0)">0</button>
-            <button class="button" onclick="operate()">=</button>
-            <button class="button" onclick="chooseOperator('+')">+</button>           
+            <button data-clear class="eraseButtons">CLEAR</button> 
+            <button data-delete class="eraseButtons">DELETE</button>   
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>÷</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>x</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>-</button>
+            <button data-number>.</button>
+            <button data-number>0</button>
+            <button data-equals>=</button>
+            <button data-operation>+</button>           
         </div>
     </div>
 
