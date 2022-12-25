@@ -12,13 +12,6 @@ body {
     align-items: center;
 }
 
-#screen {
-    width: 340px;
-    height: 80px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 10px 10px;
-}
 
 #calcButtons {
     display: grid;
@@ -37,7 +30,12 @@ body {
     height: 75px;
 }
 
-#screen {
+.screen {
+    width: 340px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -46,21 +44,19 @@ body {
     word-wrap: break-word;
 }
 
-#currentScreen {
+.currentScreen {
     text-align: right;
     height: 50%;
     width: 95%;
     font-size: 1.5rem;
-    padding: 10px;
+
 }
 
-#historyScreen {
+.historyScreen {
     text-align: right;
     height: 50%;
     width: 95%;
     font-size: 1.25rem;
-    padding: 10px;
-
 
 }
 
