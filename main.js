@@ -17,16 +17,6 @@ function deleteNumber() {
 
 }
 
-function appendNumber(number) {
-    if(number === '.' && currentData.innerText.includes('.')) {
-        return;
-    }
-    else {
-        currentData.innerText += number;
-    }
-
-}
-
 function operate() {
     let answer;
     const prev = parseFloat(dataHistory.innerText);
@@ -53,6 +43,16 @@ function operate() {
     currentData.innerText = answer;
     operationToExecute = undefined;
     dataHistory.innerText = '';
+}
+
+function appendNumber(number) {
+    if(number === '.' && currentData.innerText.includes('.')) {
+        return;
+    }
+    else {
+        currentData.innerText += number;
+    }
+
 }
 
 function chooseOperation(operation) { 
